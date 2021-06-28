@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT Switches</title>
+    <link rel="stylesheet" href="Slider.css">
+    <script src="IotSwitch.js"></script>
+</head>
+<body>
+        <div id="switchbox" class="center">    
+            <div id="switchdiv1">
+                <label class="switch">                   
+                    <input type="checkbox" id="Switch1" onclick="setSwitchDataOnClick(1)">
+                    <span class="slider round"></span>
+                  </label>  
+            </div>
+            <div id="switchdiv2" class="row">
+                <label class="switch">
+                    <input type="checkbox"  id="Switch2" onclick="setSwitchDataOnClick(2)">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <div id="switchdiv3"  class="row">
+                <label class="switch">
+                    <input type="checkbox"  id="Switch3" onclick="setSwitchDataOnClick(3)">
+                    <span class="slider round"></span>
+                  </label>   
+            </div>
+            <div id="switchdiv4" class="row">
+            <label class="switch" >
+                <input type="checkbox"  id="Switch4" onclick="setSwitchDataOnClick(4)">
+                <span class="slider round" ></span>
+            </label>
+
+            </div>
+        </div>
+
+        <div onload="setStatus()"></div>
+    
+</body>
+</html>
